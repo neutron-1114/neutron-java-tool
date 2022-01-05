@@ -1,6 +1,6 @@
 package ranger;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
@@ -46,7 +46,7 @@ public class Ranger<T extends Comparable, V> {
     private Map<Triple, V> tripleVMap;
 
     public Ranger() {
-        this.tripleVMap = new HashMap<>();
+        this.tripleVMap = new LinkedHashMap<>();
     }
 
     public V get(T value) {
